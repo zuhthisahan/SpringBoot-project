@@ -9,3 +9,4 @@
 
 first call "http://localhost:8080/generateFacebookAuthorizeUrl". It will return a URL then copy that url and send the request from your facebook logged in browser.
 
+Other Api requests You can find from the postman collection.
