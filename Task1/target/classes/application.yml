@@ -1,0 +1,21 @@
+spring:
+  social:
+    facebook.app-id:718561482184158
+    facebook.app-secret:1484dcaf54c74b8ba9f3a6dfd82677ca
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/social-db
+    username: postgres
+    password: 1234
+  logging:
+    file: logs/application.log
+    level.org.springframework.web: DEBUG
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+server:
+  port: 8080
