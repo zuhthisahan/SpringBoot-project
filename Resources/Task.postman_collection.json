@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "0df52672-7071-47e8-9ea4-37effab38ad4",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get-Auth-Url",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\" : \"code=AQDQT1mQrviCwdr6Wx5R89CFGrcEw7VTkXR8uiF0z4EAS8U5iWquk93bcPz6GdSRjL4Ap8Rd2rbb0nyDxTfxxp_aAyruREB63oV_YxynrvRPoUOR-Jy4Wl1gxvzcficdsP8UO4r7mYy2eIt0SN6_vaafqMTWUiSF6QfsXFwY4JbGSQLbdf9F_6Wq5pRzpeBHjdlkvn_v_b5VKSciUivgbUuSbo2o47I55vgTVLZo7Xbmb_xdvnwCOLXHsw-BZp1pjmWapPiPHWmkAFCKyRLDfAkvT9Y7ssto8GpB5HT3RwEz1ds3fk8FvXP1xFGPGgmwpqe06mIkaCOEfg-UmPCdrmkKbMDDmhKioHRFeWPCgEUpoA&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/generateFacebookAuthorizeUrl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"generateFacebookAuthorizeUrl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post normal-signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"first_name\":\"samsssshan\",\r\n\t\"last_name\":\"ahd\",\r\n\t\"email\":\"ssamsdsdsdsha@gmail,com\",\r\n\t\"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/normal-signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"normal-signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-normal-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n\t\"email\":\"ssamha@gmail.com\" , \r\n    \"pass\" : \"12345678\"\r\n\r\n}  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/normal-login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"normal-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Upload image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/ACER/Desktop/147014226_1381933218826302_3803321431307196703_o.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "Http://localhost:8080/customer/image/1",
+					"protocol": "Http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"image",
+						"1"
+					],
+					"query": [
+						{
+							"key": "image",
+							"value": "147014226_1381933218826302_3803321431307196703_o.jpg",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Http://localhost:8080/customer/2016e042@eng.jfn.ac.lk/",
+					"protocol": "Http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"2016e042@eng.jfn.ac.lk",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
